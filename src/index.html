@@ -15,21 +15,38 @@
 		<div class="container">
 			<div class="header-overlay">
 				<span class="header-title">ООО «ЕвроАзия-Трак» г.Тюмень</span>
-				<ul class="header-menu">
-					<li class="header-list"><a href="#" class="header-link">главная</a></li>
-					<li class="header-list"><a href="#" class="header-link">о нас</a></li>
-					<li class="header-list"><a href="#" class="header-link">акции</a></li>
-					<li class="header-list"><a href="#" class="header-link">грузовые автомобили</a></li>
-					<li class="header-list"><a href="#" class="header-link">автобусы</a></li>
-					<li class="header-list"><a href="#" class="header-link">двигатели</a></li>
-					<li class="header-list"><a href="#" class="header-link">услуги</a></li>
-					<li class="header-list"><a href="#" class="header-link">запасные части</a></li>
-					<li class="header-list"><a href="#" class="header-link">контакты</a></li>
-					<li class="header-list"><a href="#" class="header-img"> <img src="img/header/logo.png"
-								alt="Логотип сайта"></a></li>
-					<li class="header-list"><a href="#" class="header-search"> <img src="img/header/search.png"
-								alt="поиск по сайту"></a></li>
-				</ul>
+				<div class="header-menu">
+					<span class="header-list"><a href="#" class="header-link header-link__first">главная</a></span>
+					<span class="header-list"><a href="#" class="header-link">о нас</a></span>
+					<span class="header-list"><a href="#" class="header-link">акции</a>
+						<div class="header-submenu">
+							<span class="header-submenu-list"><a href="#" class="header-submenu__link">MAN TGX</a></span>
+							<span class="header-submenu-list"><a href="#" class="header-submenu__link">MAN TGS</a></span>
+							<span class="header-submenu-list"><a href="#" class="header-submenu__link">MAN TGM</a></span>
+							<span class="header-submenu-list"><a href="#" class="header-submenu__link">MAN TGL</a></span>
+							<span class="header-submenu-list"><a href="#" class="header-submenu__link">Конфигуратор</a></span>
+						</div>
+						<!-- header-submenu -->
+					</span>
+					<span class="header-list"><a href="#" class="header-link">грузовые автомобили</a></span>
+					<span class="header-list"><a href="#" class="header-link">автобусы</a></span>
+					<span class="header-list"><a href="#" class="header-link">двигатели</a></span>
+					<span class="header-list"><a href="#" class="header-link">услуги</a></span>
+					<span class="header-list"><a href="#" class="header-link">запасные части</a></span>
+					<span class="header-list"><a href="#" class="header-link">контакты</a></span>
+					<span class="header-list"><a href="#" class="header-img">
+							<img src="img/header/logo.png" alt="Логотип сайта">
+						</a></span>
+					<div class="search">
+						<form action="#">
+							<img src="img/header/search.png" class='search-img' alt="поиск по сайту">
+							<input type="text" name="search" placeholder="поиск">
+							<button type="submit" class='search-btn'>
+								<img src="img/header/search.png" alt="поиск по сайту">
+							</button>
+						</form>
+					</div>
+				</div>
 				<!-- header-menu -->
 			</div>
 			<!-- header-overlay -->
@@ -39,7 +56,8 @@
 	<!-- /.header -->
 
 
-
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/header.js"></script>
 </body>
 
 </html>
