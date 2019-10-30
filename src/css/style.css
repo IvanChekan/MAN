@@ -48,6 +48,10 @@ button {
   padding-top: 5px;
 }
 
+.header-img {
+  z-index: 999;
+}
+
 .header-title {
   position: absolute;
   top: 15px;
@@ -98,10 +102,11 @@ button {
   position: absolute;
   border: 1px solid #e1e3e5;
   border-radius: 2px;
+  background-color: #fff;
   padding: 16px 17px 0px 16px;
   min-width: 118px;
   z-index: 1;
-  top: 45px;
+  top: 50px;
   left: -50px;
 }
 
@@ -133,57 +138,76 @@ button {
   color: #e40045;
 }
 
-.header-logo {
+.slider {
+  padding-bottom: 39px;
+}
+
+.slider-img {
+  width: 100%;
+  display: block;
+}
+
+.main-slider {
+  background-color: #303c49;
+}
+
+.main-slider__info {
+  height: 121px;
+}
+
+.main-slider__text {
+  color: #acb1b6;
+  margin: 0;
+  font-size: 32px;
+  padding-top: 28px;
+  padding-left: 27px;
+  font-weight: 700;
+  font-family: 'Arial Regular', sans-serif;
+  font-weight: 400;
+}
+
+.blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.search {
-  position: relative;
-  width: 30px;
-}
-
-.search-img {
-  display: block;
-  cursor: pointer;
-}
-
-.search-btn {
-  background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
-  z-index: 2;
-  display: none;
-}
-
-input {
-  position: absolute;
-  left: -140px;
-  outline: none;
-  width: 170px;
-  padding: 5px 45px 5px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid silver;
-  font-size: 12px;
-  font-weight: 500;
-  border-radius: 22px;
-  top: -4px;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Arial Regular', sans-serif;
   font-weight: 400;
+}
+
+.about {
+  border: 1px solid #d6d8db;
+  padding: 10px;
+}
+
+.about-text {
+  max-width: 257px;
+}
+
+.service {
+  border: 1px solid #d6d8db;
+}
+
+.service-list {
+  padding: 0;
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.service-item__text {
+  max-width: 252px;
+}
+
+.contacts-block {
+  max-width: 245px;
 }
 /*# sourceMappingURL=style.css.map */
