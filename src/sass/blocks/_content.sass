@@ -1,20 +1,61 @@
-.blocks
-	display: flex
-	justify-content: space-between
-	+reg
+.content
+	padding-bottom: 60px
+	&-overlay
+		display: flex
+		justify-content: space-between
 .about
 	border: 1px solid #d6d8db
-	&-text
-		max-width: 257px
+	&-block
+		padding: 20px 18px
+		&__title
+			color: $content-text
+			font-size: 22px
+			margin: 0
+		&__text
+			font-size: 15px
+			color: $content-text
+			line-height: 22px
+		&__link
+			margin-top: 48px
 .service
 	border: 1px solid #d6d8db
+	&-block
+		padding: 20px 18px
+	&-title
+		color: $content-text
+		font-size: 22px
+		margin: 0
+	&-img
+		display: block
 	&-list
 		padding: 0
+		max-width: 257px
 	&-item
 		display: flex
-		align-items: baseline
 		&__text
-			max-width: 252px
+			font-size: 15px
+			color: $content-text
+			line-height: 22px
+			margin: 0
+			margin-bottom: 10px
+		&__cube
+			display: block
+			height: 6px
+			width: 6px
+			left: 0
+			margin-top: 7px
+			margin-right: 6px
+			background-color: $cube-color
+			margin-right: 5px
+.link
+	display: inline-block
+	padding: 13px 20px
+	border-radius: 5px
+	background-color: $slider-color
+	font-size: 15px
+	color: #fff
 .contacts
+	border: 1px solid red
+	max-width: 291px
 	&-block
-		max-width: 245px
+		padding: 30px 30px 30px 16px

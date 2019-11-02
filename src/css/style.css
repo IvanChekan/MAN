@@ -37,7 +37,8 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -78,7 +79,7 @@ button {
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'ArialNarrowRegular', sans-serif;
+  font-family: 'ArialNarrowRegular';
   font-weight: 700px;
 }
 
@@ -158,56 +159,113 @@ button {
 .main-slider__text {
   color: #acb1b6;
   margin: 0;
-  font-size: 32px;
+  font-size: 35px;
   padding-top: 28px;
-  padding-left: 27px;
   font-weight: 700;
-  font-family: 'Arial Regular', sans-serif;
-  font-weight: 400;
+  font-family: "Arial Regular";
+  font-weight: 700;
 }
 
-.blocks {
+.content {
+  padding-bottom: 60px;
+}
+
+.content-overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Arial Regular', sans-serif;
-  font-weight: 400;
 }
 
 .about {
   border: 1px solid #d6d8db;
-  padding: 10px;
 }
 
-.about-text {
-  max-width: 257px;
+.about-block {
+  padding: 20px 18px;
+}
+
+.about-block__title {
+  color: #303c49;
+  font-size: 22px;
+  margin: 0;
+}
+
+.about-block__text {
+  font-size: 15px;
+  color: #303c49;
+  line-height: 22px;
+}
+
+.about-block__link {
+  margin-top: 48px;
 }
 
 .service {
   border: 1px solid #d6d8db;
 }
 
+.service-block {
+  padding: 20px 18px;
+}
+
+.service-title {
+  color: #303c49;
+  font-size: 22px;
+  margin: 0;
+}
+
+.service-img {
+  display: block;
+}
+
 .service-list {
   padding: 0;
+  max-width: 257px;
 }
 
 .service-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .service-item__text {
-  max-width: 252px;
+  font-size: 15px;
+  color: #303c49;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.service-item__cube {
+  display: block;
+  height: 6px;
+  width: 6px;
+  left: 0;
+  margin-top: 7px;
+  margin-right: 6px;
+  background-color: #e40045;
+  margin-right: 5px;
+}
+
+.link {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 5px;
+  background-color: #303c49;
+  font-size: 15px;
+  color: #fff;
+}
+
+.contacts {
+  border: 1px solid red;
+  max-width: 291px;
 }
 
 .contacts-block {
-  max-width: 245px;
+  padding: 30px 30px 30px 16px;
 }
 /*# sourceMappingURL=style.css.map */

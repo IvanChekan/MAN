@@ -19,11 +19,16 @@
 }
 
 @mixin reg {
-	font-family: 'Arial Regular', sans-serif;
+	font-family: 'Arial Regular', ;
 	font-weight: 400;
 }
 
+@mixin reg-b {
+	font-family: 'Arial Regular', ;
+	font-weight: 700;
+}
+
 @mixin nar {
-	font-family: 'ArialNarrowRegular', sans-serif;
+	font-family: 'ArialNarrowRegular';
 	font-weight: 700px;
 }
