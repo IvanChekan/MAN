@@ -7,43 +7,42 @@
 		margin-bottom: 31px
 		+reg-b
 .card
+	border: 1px solid #d6d8db
+	border-top: none
 	margin-bottom: 19px
-	&-img
-		width: 212px
-		height: 130px
-	&-wrap
-		padding: 20px 0 20px 14px
-		border: 1px solid #d6d8db
-	&-block
+	&s
 		display: flex
-		align-items: center
-		max-width: 185px
+		flex-wrap: wrap
+		// align-items: stretch
+		justify-content: space-between
+	&-img
+		display: block
+	&-text
+		max-width: 200px
+		padding-left: 14px
+		padding-bottom: 20px
+		padding-top: 15px
+		color: $text-color
+		&__title
+			display: inline-block
+			margin-bottom: 10px
+			font-size: 18px
+			+reg-b
 		&__link
 			display: block
 			font-size: 15px
 			color: $text-color
-			padding-left: 5px
-		&__img
-			align-self: center
-	&-title
-		max-width: 185px
-		font-size: 18px
-		color: $text-color
-		margin: 0
-		margin-bottom: 7px
-	&s
-		display: flex
-		flex-wrap: wrap
-		align-items: stretch
-		justify-content: space-between
+			padding-left: 13px
+			background-image: url('../img/section/Arrow.png')
+			background-repeat: no-repeat
 .last
-	&-wrap
-		position: absolute
-		top: 20px
-		left: 14px
 	&-card
 		position: relative
 		background-color: $text-color
+	&-text
+		position: absolute
+		top: 0
+		left: 0
 	&-title
 		color: #ffffff
 	&-link
