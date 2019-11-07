@@ -1,7 +1,9 @@
 .slider
+	position: relative
 	padding-bottom: 39px
 	&-img
 		width: 100%
+		outline: none
 .main
 	&-slider
 		background-color: $slider-color
@@ -14,3 +16,62 @@
 			padding-top: 28px
 			font-weight: 700
 			+reg-b
+// .slick
+// 	&-dots
+// 		position: absolute
+// 		margin: 0
+// 		top: 50%
+// 		left: 50%
+// 		width: 100px
+// 	&-active
+// 		width: 10px
+// 		height: 10px
+// 		background-color: $cube-color
+// 		border-radius: 50%
+// .slick-dots li
+// 	display: inline-block
+// 	border-radius: 50%
+// 	width: 10px
+// 	height: 10px
+// 	margin: 0 5px
+// 	padding: 0
+// 	cursor: pointer
+// 	background-color: #ffffff
+// .slick-dots li button
+// 	font-size: 0
+// 	line-height: 0
+// 	display: block
+// 	width: 20px
+// 	height: 20px
+// 	padding: 5px
+// 	cursor: pointer
+// 	color: transparent
+// 	border: 0
+// 	outline: none
+// 	background: transparent
+
+.dots
+	display: flex
+	position: absolute
+	bottom: 170px
+	right: 50%
+	margin: 0
+	list-style-type: none
+ul
+	padding: 0
+li
+	margin-right: 10px
+	&:last-child
+		margin-right: 0
+button
+	display: inline-block
+	width: 10px
+	height: 10px
+	padding: 0
+	border: none
+	border-radius: 50%
+	// background-color: $dots-slider
+	text-indent: -9999px
+	cursor: pointer
+li.slick-active button
+	background-color: $cube-color
