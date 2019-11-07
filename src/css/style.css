@@ -397,6 +397,7 @@ li.slick-active button {
   padding-left: 13px;
   background-image: url("../img/section/Arrow.png");
   background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .last-card {
@@ -468,6 +469,7 @@ li.slick-active button {
 .pick-link {
   background-image: url("../img/section/Arrow.png");
   background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 20px;
 }
 
@@ -514,6 +516,7 @@ li.slick-active button {
 .company-link {
   background-image: url("../img/section/Arrow.png");
   background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 20px;
 }
 
