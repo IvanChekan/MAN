@@ -147,7 +147,6 @@ button {
 
 .slider-img {
   width: 100%;
-  outline: none;
 }
 
 .main-slider {
@@ -238,7 +237,7 @@ li.slick-active button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 602px;
+  width: 601px;
 }
 
 .offer-img {
@@ -545,22 +544,10 @@ li.slick-active button {
 
 .footer-row__link {
   display: inline-block;
-  position: relative;
   color: #838a92;
   font-size: 14px;
-  padding-right: 6px;
-  padding-left: 6px;
-  margin-bottom: 6px;
-}
-
-.footer-row__link:before {
-  display: block;
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 2px;
-  height: 90%;
-  background-color: #838a92;
+  padding: 0 6px 0 6px;
+  margin-bottom: 10px;
+  border-right: 2px solid #838a92;
 }
 /*# sourceMappingURL=style.css.map */
