@@ -63,6 +63,7 @@
 	&-description
 		font-size: 14px
 		color: $text-color
+		margin-bottom: 15px
 	&-row
 		max-width: 550px
 		display: flex
@@ -72,5 +73,48 @@
 			color: $title-header
 			font-size: 14px
 			padding: 0 6px 0 6px
-			margin-bottom: 5px
+			margin-bottom: 20px
 			border-right: 2px solid $title-header
+			&:first-child
+				padding-left: 0
+
+@media screen and ( max-width:768px  )
+	.title
+		margin-bottom: 25px
+	.footer
+		padding-bottom: 25px
+		&-top
+			flex-direction: column
+			padding-bottom: 15px
+	.pick
+		margin-bottom: 10px
+	.company
+		margin-bottom: 10px
+	.social
+		order: 3
+	.footer
+		&-description
+			display: inline-block
+			font-size: 11px
+			margin-bottom: 25px
+			+reg-b
+		&-row
+			&__link
+				font-size: 12px
+				margin-bottom: 10px
+				+reg-b
+
+@media screen and ( max-width:320px  )
+	.social
+		&-title
+			display: none
+		&-list
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+		&-link
+			display: none
+		&-img
+			display: flex
+			width: 31px
+			height: 31px
