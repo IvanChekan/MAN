@@ -9,22 +9,26 @@
 .card
 	border: 1px solid #d6d8db
 	border-top: none
-	margin-bottom: 19px
+	height: 100%
+	&s
+		margin-right: -9px
+		margin-left: -9px
+	&-wrap
+		padding: 9px
+		flex-basis: 25%
 	&s
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
 	&-img
 		display: block
+		width: 100%
 	&-text
-		max-width: 200px
-		padding-left: 14px
-		padding-bottom: 20px
-		padding-top: 15px
+		padding: 15px 10px 20px 14px
+		line-height: 25px
 		color: $text-color
 		&__title
 			display: inline-block
-			margin-bottom: 10px
+			padding-bottom: 3px
 			font-size: 18px
 			+reg-b
 		&__link
@@ -47,16 +51,51 @@
 		color: #ffffff
 	&-link
 		color: #ffffff
-@media screen and ( max-width:910px  )
+@media screen and ( max-width:1024px  )
 	.card
-		&s
-			justify-content: space-around
+		&-wrap
+			flex-basis: 33.3333333%
 @media screen and ( max-width:768px  )
 	.section
 		padding-bottom: 20px
-@media screen and ( max-width:320px  )
+		&-title
+			padding-bottom: 15px
+			border-bottom: 4px solid $cube-color
 	.card
-		flex-basis: 100%
+		&-text
+			padding: 15px 7px 15px 10px
+			&__title
+				font-size: 15px
+			&__link
+				font-size: 13px
+@media screen and ( max-width:622px  )
+	.card
+		&-wrap
+			flex-basis: 50%
+		&-text
+			&__title
+				font-size: 18px
+			&__link
+				font-size: 15px
+@media screen and ( max-width:474px  )
+	.card
+		&-text
+			&__title
+				font-size: 15px
+			&__link
+				font-size: 13px
+
+@media screen and ( max-width:320px  )
+	.section
+		&-title
+			font-size: 32px
+			+reg-b
+	.card
+		&s
+			justify-content: center
+		&-wrap
+			flex-basis: 95%
+			padding: 0 0 18px 0
 		&-text
 			&__title
 				font-size: 16px
@@ -64,4 +103,3 @@
 				font-size: 14px
 		&-img
 			height: 150px
-		&s

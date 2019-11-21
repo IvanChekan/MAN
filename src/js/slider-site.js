@@ -1,7 +1,9 @@
 $(document).ready(function () {
+	// main - slider
 	$('.slider').slick({
 		infinite: true,
 		autoplay: true,
+		fade: true,
 		autoplaySpeed: 3000,
 		speed: 1500,
 		slidesToShow: 1,
@@ -10,14 +12,43 @@ $(document).ready(function () {
 		dots: true,
 		dotsClass: 'dots'
 	});
-	// main-slider
-	// 	$('.offer-blocks').slick({
-	// 		infinite: true,
-	// 		autoplay: true,
-	// 		autoplaySpeed: 3000,
-	// 		speed: 1500,
-	// 		slidesToShow: 2,
-	// 		slidesToScroll: 1,
-	// 		arrows: false,
-	// 	})
+	// slider offer
+	$('.offer-slider').slick({
+		infinite: true,
+		arrows: false,
+		dots: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: true,
+					dotsClass: 'offer-dots'
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: true,
+					dots: true,
+					dotsClass: 'offer-dots'
+
+				}
+			},
+			{
+				breakpoint: 592,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					dotsClass: 'offer-dots'
+
+				}
+			}
+		]
+	})
 });
