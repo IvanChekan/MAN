@@ -20,12 +20,12 @@
 
 @mixin reg {
 	font-family: 'Arial Regular', ;
-	font-weight: 400;
+	font-weight: 400, 500, 600;
 }
 
 @mixin reg-b {
 	font-family: 'Arial Regular', ;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 @mixin nar {

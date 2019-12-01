@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>MAN</title>
-	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,7 +16,7 @@
 		<div class="container">
 			<div class="header-overlay">
 				<span class="header-title">ООО «ЕвроАзия-Трак» г.Тюмень</span>
-				<div class="header-btn"><img src="img/header/mob-menu.png" alt="Меню"></div>
+				<div class="header-btn"><i class="fas fa-bars"></i></div>
 				<ul class="header-menu">
 					<li class="header-list"><a href="#" class="header-link header-link__first">главная</a></li>
 					<li class="header-list"><a href="#" class="header-link">о нас</a></li>
@@ -40,12 +39,14 @@
 				</ul>
 				<!-- header-menu -->
 				<div class="header-logo">
-					<a href="#" class="header-logo__img">
+					<a href="home.html" class="header-logo__img">
 						<img src="img/header/logo.png" alt="Логотип сайта">
 					</a>
-					<a href="#" class="">
-						<img src="img/header/search.png" alt="поиск">
-					</a>
+					<!-- <form>
+						<input type="text" placeholder="Искать здесь...">
+						<input type="submit"><i class="fas fa-search"></i></input>
+					</form> -->
+
 				</div>
 				<!-- .header-logo -->
 			</div>
@@ -55,10 +56,9 @@
 	</header>
 	<!-- /.header -->
 
-
 	<div class="slider">
 		<div class="slider-item">
-			<a href="#"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
+			<a href="#" class="slider-link"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
 			<div class="main-slider">
 				<div class="container">
 					<div class="main-slider__info">
@@ -71,7 +71,7 @@
 		</div>
 		<!-- slider-item -->
 		<div class="slider-item">
-			<a href="#"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
+			<a href="#" class="slider-link"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
 			<div class="main-slider">
 				<div class="container">
 					<div class="main-slider__info">
@@ -84,7 +84,7 @@
 		</div>
 		<!-- slider-item -->
 		<div class="slider-item">
-			<a href="#"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
+			<a href="#" class="slider-link"><img src="img/slider/MAN.png" class="slider-img" alt="Камаз"></a>
 			<div class="main-slider">
 				<div class="container">
 					<div class="main-slider__info">
@@ -159,7 +159,35 @@
 					<!-- /.offer-overlay -->
 				</div>
 				<!-- .offer-slider -->
+				<div class="contacts contacts-mobail">
+					<div class="contacts-block">
+						<h2 class="contacts-block__title">контакты</h2>
+						<span class="contacts-block__subtitle">ООО «ЕвроАзия-Трак» </span>
+						<div class="contacts-block__list">
+							<p class="contacts-block__item">Адрес:</p>
+							<p class="contacts-block__item">625501, Тюменский р-он, пос. Московский, ул. Северная, 39а</p>
+							<p class="contacts-block__item">Телефон:+7 (3452) 39-99-55</p>
+							<p class="contacts-block__item">
+								<a href="mailto:Email: truck@euroazia.ru" class="contacts-block__link">Email: truck@euroazia.ru</a>
+							</p>
+							<p class="contacts-block__item contacts-block__time">Часы работы:<br> ежедневно с 8:30 до 20:30</p>
+						</div>
+						<p><a href="#" class="contacts-block__way">Схема проезда</a></p>
+						<p><a href="#" class="contacts-block__way">Инфолиния МАН: 8 800 250 5522</a></p>
+					</div>
+					<!-- /.contacts-block -->
+				</div>
+				<!-- /.contacts -->
+				<div class="arrows">
+					<div class="arrow__left">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<div class="arrow__right">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
 			</div>
+			<!-- ./offer-wrap -->
 		</div>
 		<!-- /.container -->
 	</div>
@@ -386,10 +414,15 @@
 	<!-- /.footer -->
 
 
+
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/slider-site.js"></script>
 	<script src="js/header.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+		integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
 </body>
 
 </html>

@@ -2,8 +2,11 @@
 	position: relative
 	top: -15px
 	padding-bottom: 10px
+	margin-bottom: 0
 	&-img
 		width: 100%
+	&-link
+		outline: none
 .main
 	&-slider
 		background-color: $slider-color
@@ -44,10 +47,10 @@ li.slick-active button
 .slick
 	&-slide:active
 		outline: none
-@media screen and ( max-width:962px  )
+@media screen and ( max-width:962px	)
 	.slider
 		top: 0
-@media screen and ( max-width:768px  )
+@media screen and ( max-width:768px	)
 	.main
 		&-slider
 			&__info
@@ -58,12 +61,13 @@ li.slick-active button
 	.dots
 		bottom: 110px
 		right: 45%
-@media screen and ( max-width:425px  )
+@media screen and ( max-width:425px	)
 	.main
 		&-slider
 			&__text
 				font-size: 22px
 	.slider
+		padding-bottom: 5px
 		&-img
 			height: 130px
 	.dots

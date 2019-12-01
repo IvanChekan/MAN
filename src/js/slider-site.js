@@ -12,20 +12,35 @@ $(document).ready(function () {
 		dots: true,
 		dotsClass: 'dots'
 	});
+	// slider__home
+	$('.slider-home').slick({
+		infinite: true,
+		autoplay: true,
+		fade: true,
+		autoplaySpeed: 3000,
+		speed: 1500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+		dotsClass: 'home-dots'
+	});
 	// slider offer
 	$('.offer-slider').slick({
 		infinite: true,
-		arrows: false,
+		arrows: true,
 		dots: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		prevArrow: $('.arrow__left'),
+		nextArrow: $('.arrow__right'),
 		responsive: [{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 					dots: true,
-					dotsClass: 'offer-dots'
+					dotsClass: 'offer-dots',
 				}
 			},
 			{
@@ -33,10 +48,8 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					arrows: true,
 					dots: true,
-					dotsClass: 'offer-dots'
-
+					dotsClass: 'offer-dots',
 				}
 			},
 			{
@@ -45,8 +58,7 @@ $(document).ready(function () {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					dots: true,
-					dotsClass: 'offer-dots'
-
+					dotsClass: 'offer-dots',
 				}
 			}
 		]

@@ -6,6 +6,8 @@
 .link
 	color: $text-color
 	font-size: 14px
+	&:hover
+		color: lighten($text-color,20%)
 .item
 	display: flex
 	align-items: center
@@ -21,6 +23,7 @@
 		align-items: stretch
 		padding-bottom: 38px
 .pick
+	margin-right: 30px
 	&-list
 		padding: 0
 	&-link
@@ -29,13 +32,13 @@
 		background-position: left center
 		padding-left: 20px
 .social
+	margin-right: 30px
 	&-list
 		padding: 0
 		font-size: 14px
 	&-item
 		display: flex
 		align-items: center
-		margin-bottom: 8px
 	&-link
 		padding-left: 12px
 	&-img
@@ -77,9 +80,14 @@
 			border-right: 2px solid $title-header
 			&:first-child
 				padding-left: 0
-@media screen and ( max-width:948px  )
+			&:hover
+				color: darken($title-header, 20%)
+@media screen and ( max-width:992px	)
+	.footer
+		&-description
+			margin-right: 20px
 
-@media screen and ( max-width:768px  )
+@media screen and ( max-width:768px	)
 	.title
 		margin-bottom: 25px
 	.footer
@@ -88,8 +96,6 @@
 			flex-direction: column
 			padding-bottom: 15px
 	.pick
-		margin-bottom: 10px
-	.company
 		margin-bottom: 10px
 	.social
 		order: 3
@@ -105,8 +111,9 @@
 				margin-bottom: 7px
 				+reg-b
 
-@media screen and ( max-width:320px  )
+@media screen and ( max-width:320px	)
 	.social
+		margin-right: 0
 		&-title
 			display: none
 		&-list
@@ -119,3 +126,8 @@
 			display: flex
 			width: 31px
 			height: 31px
+	.pick
+		margin-right: 0
+	.footer
+		&-description
+			margin-right: 0
